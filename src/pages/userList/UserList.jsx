@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "./userList.css";
 
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import { userRows } from "../../dummyData";
 
 import { DeleteOutline } from "@mui/icons-material";
