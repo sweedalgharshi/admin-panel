@@ -1,5 +1,5 @@
-import React from "react";
-import "./sidebar.css";
+import React from 'react';
+import './sidebar.css';
 
 import {
   LineStyle,
@@ -13,7 +13,8 @@ import {
   Report,
   ChatBubbleOutline,
   ForumOutlined,
-} from "@mui/icons-material";
+} from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -39,14 +40,18 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-items active">
-              <Person className="sidebar-icon" />
-              Users
-            </li>
-            <li className="sidebar-list-items">
-              <Timeline className="sidebar-icon" />
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebar-list-items ">
+                <Person className="sidebar-icon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebar-list-items">
+                <Timeline className="sidebar-icon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebar-list-items">
               <AttachMoney className="sidebar-icon" />
               Transactions
@@ -60,7 +65,7 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Notifications</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-items active">
+            <li className="sidebar-list-items ">
               <EmailOutlined className="sidebar-icon" />
               Mail
             </li>
@@ -77,7 +82,7 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Staff</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-items active">
+            <li className="sidebar-list-items ">
               <WorkOutline className="sidebar-icon" />
               Manage
             </li>
