@@ -11,6 +11,8 @@ import ProductList from './pages/product-list/ProductList';
 import Product from './pages/products/Product';
 import NewProduct from './pages/new-product/NewProduct';
 
+import { TOKEN } from './keys';
+
 function App() {
   return (
     <BrowserRouter>
